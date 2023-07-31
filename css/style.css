@@ -158,8 +158,11 @@ main .header p {
   font-size: small;
   opacity: 50%;
 }
+main .header img {
+  margin-top: 20px;
+}
 main .info {
-  margin-top: 75px;
+  margin-top: 30px;
 }
 main .info .info-p {
   margin: 0;
