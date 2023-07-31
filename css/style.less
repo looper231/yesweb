@@ -38,8 +38,9 @@ main{
     }
     .info{
         margin-top: 75px;
-        p{
+        .info-p{
             margin: 0;
+            font-size: 25px;
         }
         .choose{
             color: lightgray;
@@ -60,11 +61,17 @@ main{
     }
     .about-me{
         display:flex;
-        margin-top: 75px;
         margin-left: 180px;
         margin-right: 180px;
+        flex-direction: column;
+        align-items: center;
         .about-me-info{
-            margin-left: 60px;
+            p{
+                a{
+                    color: white;
+                    font-style: italic;
+                }
+            }
         }
     }
     .projects{
@@ -99,10 +106,12 @@ main{
             .soon:after{
                 content: "Coming Soon!";
                 position: absolute;
-                top: 42%;
-                left: 11%;
+                top: 35%;
+                left: 0;
                 -webkit-text-stroke: 1px black;
                 font-weight: 900;
+                font-size: 30px;
+                line-height: 24px;
             }
             .item:hover{
                 transform: scale(1.1);
