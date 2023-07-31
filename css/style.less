@@ -83,6 +83,26 @@ main{
                 justify-content: center;
                 transition: transform 500ms ease;
                 image-rendering: auto;
+                margin-left: 5px;
+                margin-right: 5px;
+                margin-bottom: 5px;
+                img {
+                    max-width: 100%;
+                    height: auto;
+                    border-radius: 5%;
+                }
+            }
+            .soon{
+                position: relative;
+                filter: grayscale(100%);
+            }
+            .soon:after{
+                content: "Coming Soon!";
+                position: absolute;
+                top: 42%;
+                left: 11%;
+                -webkit-text-stroke: 1px black;
+                font-weight: 900;
             }
             .item:hover{
                 transform: scale(1.1);
