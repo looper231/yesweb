@@ -82,20 +82,18 @@ main{
         margin: auto;
         .items{
             margin-top: 20px;
-            display: flex;
+            display: inline-flex;
             align-items: center;
             justify-content: center;
             flex-wrap: wrap;
+            gap: 10px;
             .item{
                 width: 150px;
                 height: 150px;
                 align-items: center;
                 justify-content: center;
                 transition: transform 500ms ease;
-                image-rendering: auto;
-                margin-left: 5px;
-                margin-right: 5px;
-                margin-bottom: 5px;
+                image-rendering: optimizeQuality;
                 img {
                     max-width: 100%;
                     height: auto;
@@ -108,13 +106,13 @@ main{
             }
             .soon:after{
                 content: "Coming Soon!";
-                position: absolute;
-                top: 35%;
+                position: fixed;
+                top: 42%;
                 left: 0;
-                -webkit-text-stroke: 1px black;
-                font-weight: 900;
-                font-size: 30px;
+                width: 100%;
+                height: max-content;
                 line-height: 24px;
+                background-color: rgba(0, 0, 0, 0.822)
             }
             .item:hover{
                 transform: scale(1.1);
