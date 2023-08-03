@@ -227,26 +227,13 @@ main .projects .items {
   flex-wrap: wrap;
   gap: 10px;
 }
-main .projects .items .hover:after {
-  content: "Click me!";
-  opacity: 0;
-  transition: all 500ms ease;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.822);
-  position: absolute;
-  top: 42%;
-  left: 0;
-}
-main .projects .items .hover:hover:after {
-  opacity: 1;
-}
 main .projects .items .item {
   width: 150px;
   height: 150px;
   align-items: center;
   justify-content: center;
   transition: transform 500ms ease;
-  image-rendering: optimizeQuality;
+  image-rendering: auto;
   position: relative;
 }
 main .projects .items .item img {
