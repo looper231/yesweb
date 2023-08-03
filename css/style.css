@@ -131,6 +131,9 @@
   .about-me {
     margin: 0!important;
   }
+  .p-info-container {
+    flex-direction: column;
+  }
 }
 html {
   background-color: black;
@@ -157,6 +160,12 @@ main {
   text-align: center;
   border-radius: 2%;
 }
+main .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 30px;
+}
 main .header h1 {
   text-align: center;
   margin: 0;
@@ -170,11 +179,13 @@ main .header p {
   font-size: small;
   opacity: 50%;
 }
-main .header img {
-  margin-top: 20px;
+main .header a {
+  color: white;
+  font-style: italic;
+  font-weight: 500;
 }
-main .info {
-  margin-top: 30px;
+main .header .logo {
+  margin-top: 20px;
 }
 main .info .info-p {
   margin: 0;
@@ -254,4 +265,38 @@ main .visual-novels .vn-link {
 }
 main .visual-novels .vn-link:hover {
   transform: scale(1.1);
+}
+/* -->Project pages<-- */
+.p-info-container {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  margin-bottom: 25px;
+}
+.p-info-container img {
+  border-radius: 15px;
+}
+.player-container {
+  background-color: rgba(128, 128, 128, 0.349);
+  border-radius: 12px;
+  max-height: 300px;
+  position: relative;
+}
+.player-container iframe {
+  border-radius: 12px;
+}
+.links {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.links i {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 45px;
+  transition: all 500ms ease;
+}
+.links i:hover {
+  transform: scale(1.2);
 }

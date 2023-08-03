@@ -8,6 +8,9 @@
     .about-me{
         margin: 0!important;
     }
+    .p-info-container{
+        flex-direction: column;
+    }
 }
 
 html{
@@ -35,6 +38,10 @@ main{
     text-align: center;
     border-radius: 2%;
     .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 30px;
         h1{
             text-align: center;
             margin: 0;
@@ -48,12 +55,16 @@ main{
             font-size: small;
             opacity: 50%;
         }
-        img{
+        a{
+            color: white;
+            font-style: italic;
+            font-weight: 500;
+        }
+        .logo{
             margin-top: 20px;
         }
     }
     .info{
-        margin-top: 30px;
         .info-p{
             margin: 0;
             font-size: 25px;
@@ -142,5 +153,40 @@ main{
         .vn-link:hover{
             transform: scale(1.1);
         }
+    }
+}
+
+/* -->Project pages<-- */
+.p-info-container{
+    display: flex;
+    align-items: center;
+    gap:35px;
+    margin-bottom: 25px;
+    img{
+        border-radius: 15px;
+    }
+}
+.player-container {
+    background-color: rgba(128, 128, 128, 0.349);
+    border-radius: 12px;
+    max-height: 300px;
+    position: relative;
+    iframe{
+        border-radius: 12px;
+    }
+}
+.links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    i{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 45px;
+        transition: all 500ms ease;
+    }
+    i:hover{
+        transform: scale(1.2);
     }
 }
