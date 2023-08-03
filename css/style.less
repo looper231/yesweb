@@ -1,6 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
+@media only screen and (max-width: 768px){
+    main{
+        max-width: 100%;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-top: 2%;
+         padding-bottom: 2%;
+    }
+    .about-me{
+        margin: 0!important;
+    }
+}
+
 html{
     background-color: black;
     font-family: 'Montserrat', sans-serif;
@@ -14,7 +27,11 @@ body{
     flex-direction: column;
 }
 main{
-    width:1250px;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    max-width:1250px;
     margin: auto;
     color: white;
     background-color: rgba(58, 58, 58, 0.185);
@@ -117,6 +134,17 @@ main{
             .item:hover{
                 transform: scale(1.1);
             }
+        }
+    }
+    .visual-novels{
+        .vn-link{
+            color: white;
+            transition: transform 500ms ease;
+            font-style: italic;
+            font-weight: 600;
+        }
+        .vn-link:hover{
+            transform: scale(1.1);
         }
     }
 }
