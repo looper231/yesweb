@@ -111,9 +111,6 @@ main{
             justify-content: center;
             flex-wrap: wrap;
             gap: 10px;
-            .hover {
-                position: relative;
-            }
             .hover:after {
                 content:"Click me!";
                 opacity: 0;
@@ -134,10 +131,25 @@ main{
                 justify-content: center;
                 transition: transform 500ms ease;
                 image-rendering: optimizeQuality;
+                position: relative;
                 img {
                     max-width: 100%;
                     height: auto;
                     border-radius: 5%;
+                }
+                .hover:after {
+                    content:"Click me!";
+                    opacity: 0;
+                    transition: all 500ms ease;
+                    width: 100%;
+                    background-color: rgba(0, 0, 0, 0.822);
+                    position: absolute;
+                    top: 42%;
+                    left: 0;
+                    color: white;
+                }
+                .hover:hover:after{
+                    opacity: 1;
                 }
             }
             .soon{

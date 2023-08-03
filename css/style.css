@@ -227,9 +227,6 @@ main .projects .items {
   flex-wrap: wrap;
   gap: 10px;
 }
-main .projects .items .hover {
-  position: relative;
-}
 main .projects .items .hover:after {
   content: "Click me!";
   opacity: 0;
@@ -250,11 +247,26 @@ main .projects .items .item {
   justify-content: center;
   transition: transform 500ms ease;
   image-rendering: optimizeQuality;
+  position: relative;
 }
 main .projects .items .item img {
   max-width: 100%;
   height: auto;
   border-radius: 5%;
+}
+main .projects .items .item .hover:after {
+  content: "Click me!";
+  opacity: 0;
+  transition: all 500ms ease;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.822);
+  position: absolute;
+  top: 42%;
+  left: 0;
+  color: white;
+}
+main .projects .items .item .hover:hover:after {
+  opacity: 1;
 }
 main .projects .items .soon {
   position: relative;
