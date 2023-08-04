@@ -282,6 +282,11 @@ main .visual-novels .vn-link:hover {
   transform: scale(1.1);
 }
 /* -->Project pages<-- */
+.header a {
+  position: absolute;
+  top: 2%;
+  font-size: 20px;
+}
 .p-info-container {
   display: flex;
   align-items: center;
@@ -294,8 +299,8 @@ main .visual-novels .vn-link:hover {
 .player-container {
   background-color: rgba(128, 128, 128, 0.349);
   border-radius: 12px;
-  max-height: 300px;
   position: relative;
+  max-height: 352px;
 }
 .player-container iframe {
   border-radius: 12px;
