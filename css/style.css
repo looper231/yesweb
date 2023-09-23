@@ -274,6 +274,20 @@ main .projects .items .soon:after {
   line-height: 24px;
   background-color: rgba(0, 0, 0, 0.822);
 }
+main .projects .items .maintenance {
+  position: relative;
+  filter: grayscale(100%);
+}
+main .projects .items .maintenance:after {
+  content: "Under Maintenance!";
+  position: fixed;
+  top: 34%;
+  left: 0;
+  width: 100%;
+  height: max-content;
+  line-height: 24px;
+  background-color: rgba(0, 0, 0, 0.822);
+}
 main .projects .items .item:hover {
   transform: scale(1.1);
 }

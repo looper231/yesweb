@@ -158,6 +158,20 @@ main{
                 line-height: 24px;
                 background-color: rgba(0, 0, 0, 0.822)
             }
+            .maintenance{
+                position: relative;
+                filter: grayscale(100%);
+            }
+            .maintenance:after{
+                content: "Under Maintenance!";
+                position: fixed;
+                top: 34%;
+                left: 0;
+                width: 100%;
+                height: max-content;
+                line-height: 24px;
+                background-color: rgba(0, 0, 0, 0.822)
+            }
             .item:hover{
                 transform: scale(1.1);
             }
