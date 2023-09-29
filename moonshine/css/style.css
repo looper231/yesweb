@@ -128,7 +128,7 @@
   main {
     max-width: 100%;
   }
-  .preloader {
+  .logo {
     max-width: 100%;
   }
 }
@@ -138,6 +138,9 @@ html {
   background-repeat: repeat;
   background-attachment: scroll;
 }
+img {
+  max-width: 100%;
+}
 body {
   padding: 0;
   margin: 0;
@@ -146,42 +149,29 @@ body {
   flex-wrap: wrap;
   align-items: center;
 }
-.preloader {
-  background-color: black;
-  height: 100%;
-  background-attachment: fixed;
+main {
+  max-width: 80%;
+  min-height: max-content;
+  background-color: rgba(71, 71, 71, 0.329);
+  border-radius: 2%;
+  padding: 1%;
+  color: white;
+}
+main .logo {
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   flex-direction: column;
-  z-index: 1;
-  position: absolute;
   text-align: center;
 }
-.preloader img {
-  max-width: 100%;
-}
-.preloader .preloader-text {
+main .logo .logo-text {
   font-weight: 500;
   font-size: 40px;
 }
-.preloader .preloader-loading {
-  animation: wave-text 1s ease-in-out infinite;
-  margin-top: 20px;
-}
-@keyframes wave-text {
-  0% {
-    transform: translateY(0em);
-  }
-  50% {
-    transform: translateY(-0.5em);
-  }
-  100% {
-    transform: translateY(0em);
-  }
-}
-main {
-  max-width: 80%;
-  background-color: gray;
+main .menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }

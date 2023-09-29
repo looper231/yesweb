@@ -4,18 +4,19 @@
     main{
         max-width: 100%;
     }
-    .preloader{
+    .logo{
         max-width: 100%;
     }
 }
-
 html{
     font-family: 'Montserrat', sans-serif;
     background-color: black;
     background-repeat: repeat;
     background-attachment: scroll;
 }
-
+img{
+    max-width: 100%;
+}
 body{
     padding: 0;
     margin: 0;
@@ -25,42 +26,29 @@ body{
     align-items: center;
 }
 
-.preloader{
-    background-color: black;
-    height: 100%;
-    background-attachment: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    flex-direction: column;
-    z-index: 1;
-    position: absolute;
-    text-align: center;
-    img{
-        max-width: 100%;
-    }
-    .preloader-text{
-        font-weight: 500;
-        font-size: 40px;
-    }
-    .preloader-loading{
-        animation: wave-text 1s ease-in-out infinite;
-        margin-top: 20px;
-    }
-    @keyframes wave-text{
-        0%{
-            transform: translateY(0em);
-        }
-        50%{
-            transform: translateY(-0.5em);
-        }
-        100%{
-            transform: translateY(0em);
-        }
-    }
-}
 main{
     max-width: 80%;
-    background-color: gray;
+    min-height: max-content;
+    background-color: rgba(71, 71, 71, 0.329);
+    border-radius: 2%;
+    padding: 1%;
+    color: white;
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        flex-direction: column;
+        text-align: center;
+        .logo-text{
+            font-weight: 500;
+            font-size: 40px;
+        }
+    }
+    .menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
 }
