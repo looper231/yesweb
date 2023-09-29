@@ -300,6 +300,25 @@ main .visual-novels .vn-link {
 main .visual-novels .vn-link:hover {
   transform: scale(1.1);
 }
+footer {
+  max-width: 1250px;
+  margin: auto;
+  color: #777777;
+  min-height: max-content;
+  text-align: center;
+  width: 100%;
+}
+footer .footer {
+  display: flex;
+  font-size: 11px;
+  align-items: center;
+  justify-content: space-between;
+  color: #7a7a7a;
+  margin: 0;
+}
+footer .footer a {
+  color: #7a7a7a;
+}
 /* -->Project pages<-- */
 .header a {
   position: absolute;
@@ -338,23 +357,4 @@ main .visual-novels .vn-link:hover {
 }
 .links i:hover {
   transform: scale(1.2);
-}
-footer {
-  max-width: 1250px;
-  margin: auto;
-  color: #777777;
-  min-height: max-content;
-  text-align: center;
-  width: 100%;
-}
-footer .footer {
-  display: flex;
-  font-size: 11px;
-  align-items: center;
-  justify-content: space-between;
-  color: #7a7a7a;
-  margin: 0;
-}
-footer .footer a {
-  color: #7a7a7a;
 }
