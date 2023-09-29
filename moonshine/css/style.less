@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@media only screen and (max-width: 768px){
+    main{
+        max-width: 100%;
+    }
+    .preloader{
+        max-width: 100%;
+    }
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    background-repeat: repeat;
+    background-attachment: scroll;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.preloader{
+    background-color: black;
+    height: 100%;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    img{
+        max-width: 100%;
+    }
+    .preloader-text{
+        font-weight: 500;
+        font-size: 40px;
+    }
+    .preloader-loading{
+        animation: wave-text 1s ease-in-out infinite;
+        margin-top: 20px;
+    }
+    @keyframes wave-text{
+        0%{
+            transform: translateY(0em);
+        }
+        50%{
+            transform: translateY(-0.5em);
+        }
+        100%{
+            transform: translateY(0em);
+        }
+    }
+}
+main{
+    max-width: 80%;
+    background-color: gray;
+}
