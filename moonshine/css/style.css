@@ -260,3 +260,23 @@ main .site-body .ms-presentation .ms-p-segment .segment-info {
 main .site-body .ms-presentation .ms-p-segment .segment-info p {
   width: 90%;
 }
+main .join-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .join-us a {
+  width: 100px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(245, 245, 220, 0.137);
+  border-radius: 15%;
+  font-weight: bold;
+  transition: 100ms all;
+}
+main .join-us a:hover {
+  background-color: rgba(165, 42, 42, 0.137);
+}
