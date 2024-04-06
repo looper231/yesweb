@@ -45,10 +45,50 @@ html {
   background-color: black;
   font-family: "Roboto", sans-serif;
 }
-main {
-  background-color: black;
-  width: 100%;
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-main .cd_container {
-  background-color: black;
+p {
+  margin: 0;
+}
+a {
+  color: white;
+  font-weight: 500;
+}
+main {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  padding: 1%;
+  width: 70%;
+}
+main .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgba(128, 128, 128, 0.178);
+  height: 100%;
+  border-radius: 5%;
+}
+main .cd {
+  padding: 100px;
+}
+main .cd .title {
+  font-size: 70px;
+}
+main .cd #timer {
+  font-size: 35px;
+}
+main .info {
+  border-radius: 5%;
+  padding: 2%;
+  margin-top: 30px;
+}
+main .details {
+  margin-top: 30px;
 }
