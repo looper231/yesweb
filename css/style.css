@@ -300,6 +300,17 @@ main .visual-novels .vn-link {
 main .visual-novels .vn-link:hover {
   transform: scale(1.1);
 }
+main .re-zero .rz-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+main .re-zero .rz-links a {
+  color: white;
+  font-style: italic;
+  font-weight: 600;
+}
 footer {
   max-width: 1250px;
   margin: auto;
