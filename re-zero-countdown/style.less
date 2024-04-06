@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:ital,wght@0,400;0,500;1,400;1,500&family=Tektur:wght@900&display=swap');
 
 html{
-    background-color: black;
     font-family: "Roboto", sans-serif;
 }
 body{
@@ -9,6 +8,12 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-image: url('./background.png');
+    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    
 }
 p{
     margin: 0;
@@ -16,6 +21,10 @@ p{
 a{
     color: white;
     font-weight: 500;
+}
+iframe{
+    border:0;
+    border-radius: 1%;
 }
 main{
     margin: 0;
@@ -51,4 +60,21 @@ main{
         margin-top: 30px;
         padding: 2%;
     }
+    .posters {
+        img{
+            height: 420px;
+            border-radius: 1%;
+        }
+    }
+}
+.footer{
+     display: flex;
+     font-size: 11px;
+     align-items: center;
+     justify-content: space-between;
+     color:rgb(122, 122, 122);
+     margin-top: 1%;
+     a{
+        color:rgb(122, 122, 122);
+     }
 }
