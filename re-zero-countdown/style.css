@@ -108,6 +108,11 @@ main .container {
   background-color: rgba(128, 128, 128, 0.178);
   height: 100%;
   border-radius: 5%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+main .container p {
+  margin-bottom: 20px;
 }
 main .cd {
   padding: 100px;
@@ -121,10 +126,8 @@ main .cd #timer {
 main .info {
   border-radius: 5%;
   padding: 2%;
-  margin-top: 30px;
 }
 main .details {
-  margin-top: 30px;
   padding: 2%;
 }
 main .posters img {
