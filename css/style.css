@@ -126,7 +126,7 @@
 }
 @media only screen and (max-width: 768px) {
   main {
-    max-width: 100%;
+    max-width: 100%!important;
   }
   .about-me {
     margin: 0!important;
@@ -151,6 +151,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 main {
   padding-left: 1%;
@@ -339,11 +340,15 @@ footer .footer a {
 .p-info-container {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 35px;
   margin-bottom: 25px;
 }
 .p-info-container img {
   border-radius: 15px;
+}
+.p-i-details {
+  width: 100%;
 }
 .player-container {
   background-color: rgba(128, 128, 128, 0.349);
