@@ -1,0 +1,238 @@
+body {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  line-height: 1.5;
+}
+/* СБРОС СТИЛЕЙ */
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+p {
+  line-height: 1;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитают их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/*headrr*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+}
+
+header img {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 70px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 24px;
+  transition: 0.3s;
+}
+nav ul li a:hover {
+  color: #ff5722;
+}
+
+/*main*/
+
+/*container*/
+
+.container {
+  background: url("/img/background.png") no-repeat center center/cover;
+  color: #fff;
+}
+
+.container__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  max-width: 60%;
+}
+
+.container h1 {
+  font-size: 4em;
+  font-weight: 400;
+}
+
+.container p {
+  font-size: 2rem;
+}
+
+.container button {
+  background-color: #00aaff;
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 20px 0;
+  border: none;
+  transition: 0.3s;
+}
+
+.container button:hover {
+  background-color: #ff5722;
+}
+
+/*screenshots*/
+
+.screenshots {
+  max-width: 1600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.screenshots h2 {
+  margin-bottom: 40px;
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.screenshot-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.screenshot-grid img {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*features*/
+
+.features__section {
+  background: url("/img/features.png") no-repeat center center/cover;
+  text-align: center;
+  padding: 20px 20px;
+  
+}
+
+.features__title {
+  color: #fff;
+}
+
+.features__section h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  font-weight: 400;
+}
+
+.features__section p {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.features__grid {
+  color: #000;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature__box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.feature__box h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.feature__box p {
+  font-size: 24px;
+  margin: 0;
+}
+
+.additional-text {
+  color: #fff;
+  margin-top: 40px;
+  font-size: 18px;
+}
