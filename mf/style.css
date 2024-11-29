@@ -1,6 +1,6 @@
 body {
   font-family: "Lilita One", sans-serif;
-  font-weight: 400;
+
   font-style: normal;
   margin: 0;
   min-height: 100vh;
@@ -13,6 +13,11 @@ body {
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+* {
+  text-decoration: none;
+
 }
 
 /* Убираем внутренние отступы */
@@ -77,7 +82,7 @@ button {
   }
 }
 
-/*headrr*/
+/*header*/
 header {
   display: flex;
   justify-content: space-between;
@@ -134,25 +139,31 @@ nav ul li a:hover {
   font-size: 2rem;
 }
 
-.container button {
+.container__buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.container__buttons .button {
   background-color: #00aaff;
   color: #fff;
   padding: 15px 30px;
   text-decoration: none;
   font-size: 1.2rem;
   border-radius: 5px;
-  display: inline-block;
-  margin: 20px 0;
   border: none;
-  transition: 0.3s;
+  display: inline-block;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s;
+  margin: 20px 0;
 }
 
-.container button:hover {
+.container .button:hover {
   background-color: #ff5722;
 }
 
-/*screenshots*/
-
+/* screenshots */
 .screenshots {
   max-width: 1600px;
   margin: 0 auto;
@@ -178,15 +189,61 @@ nav ul li a:hover {
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease; /* smooth zoom */
 }
+
+/* hover effect for screenshots */
+.screenshot:hover {
+  cursor: pointer;
+  transform: scale(1.05); /* Увеличение изображения */
+}
+
+.screenshot {
+  transition: transform 0.3s ease; /* smooth zoom */
+}
+
+/* Modal styles */
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.modal.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-content {
+  width: 1000px;
+  display: block;
+  margin: auto;
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+
+.modal.open .modal-content {
+  transform: scale(1);
+}
+
+
 
 /*features*/
 
 .features__section {
-  background: url("img/features.png") no-repeat center center/cover;
+  background: url("/img/features.png") no-repeat center center/cover;
   text-align: center;
   padding: 20px 20px;
-  
 }
 
 .features__title {
@@ -195,7 +252,6 @@ nav ul li a:hover {
 
 .features__section h2 {
   font-size: 4rem;
-  font-weight: bold;
   font-weight: 400;
 }
 
@@ -205,9 +261,9 @@ nav ul li a:hover {
 }
 
 .features__grid {
+  flex-wrap: wrap;
   color: #000;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
@@ -222,7 +278,7 @@ nav ul li a:hover {
 
 .feature__box h3 {
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 400;
   margin-bottom: 10px;
 }
 
@@ -234,5 +290,107 @@ nav ul li a:hover {
 .additional-text {
   color: #fff;
   margin-top: 40px;
-  font-size: 18px;
+}
+
+/*contributors*/
+
+.contributors__section {
+  background: url("img/contributors.png") no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+
+}
+
+.contributors__title h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.contributors__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contributor__box {
+  min-height: 240px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contributor__image {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contributor__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contributor__image.placeholder {
+  background-color: #e0e0e0;
+}
+
+.contributor__box h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.contributor__box p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.helpers__section {
+  margin-top: 40px;
+}
+
+.helpers__section h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.helpers__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.helpers__list span {
+  font-size: 1rem;
+  padding: 5px 10px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/*freaky footer 👅👅👅👅*/
+
+footer{
+  font-size: 20px;
+  padding: 20px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
 }

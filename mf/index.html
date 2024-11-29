@@ -10,12 +10,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
     <title>Meteo Dream</title>
   </head>
 
   <body>
     <header>
-      <img src="img/logo.png" alt="Meteo_Dream" />
+      <img src="/img/logo.png" alt="Meteo_Dream" />
       <nav class="header__navbar">
         <ul class="nav__container">
           <li class="btn"><a href="#about">ABOUT</a></li>
@@ -27,9 +28,9 @@
     </header>
 
     <main>
-      <div class="container">
+      <div class="container" id="about">
         <div class="container__inner">
-          <img src="img/gamelogo.png" alt="MarioForever" />
+          <img src="/img/gamelogo.png" alt="MarioForever" />
           <div>
             <h1>Play the upgraded classic again!</h1>
             <p>
@@ -39,23 +40,59 @@
               the game and bring a lot of quality of life features and
               cosmetics, not seen before, to the game.
             </p>
-            <button>DOWNLOAD</button>
+            <div class="container__buttons">
+              <a href="https://rnx.su/s/DZm6PEkZf3z4owp" class="button">DOWNLOAD </a>
+              <a href="https://rnx.su/s/EBKD7LLxrPYM8W2" class="button"> SOUNDTRACK </a>
+              <a href="https://mfce.rnx.su/discord" class="button"> DISCORD </a>
+            </div>
           </div>
         </div>
+
         <section id="screenshots" class="screenshots">
           <h2>SCREENSHOTS</h2>
           <div class="screenshot-grid">
-            <img src="img/screenshots/skrin1.png" alt="Screenshot 1" />
-            <img src="img/screenshots/skrin2.png" alt="Screenshot 2" />
-            <img src="img/screenshots/skrin3.png" alt="Screenshot 3" />
-            <img src="img/screenshots/skrin4.png" alt="Screenshot 4" />
-            <img src="img/screenshots/skrin5.png" alt="Screenshot 5" />
-            <img src="img/screenshots/skrin6.png" alt="Screenshot 6" />
+            <img
+              src="/img/screenshots/skrin1.png"
+              alt="Screenshot 1"
+              class="screenshot"
+            />
+            <img
+              src="/img/screenshots/skrin2.png"
+              alt="Screenshot 2"
+              class="screenshot"
+            />
+            <img
+              src="/img/screenshots/skrin3.png"
+              alt="Screenshot 3"
+              class="screenshot"
+            />
+            <img
+              src="/img/screenshots/skrin4.png"
+              alt="Screenshot 4"
+              class="screenshot"
+            />
+            <img
+              src="/img/screenshots/skrin5.png"
+              alt="Screenshot 5"
+              class="screenshot"
+            />
+            <img
+              src="/img/screenshots/skrin6.png"
+              alt="Screenshot 6"
+              class="screenshot"
+            />
           </div>
         </section>
+
+        <!-- Modal -->
+        <div id="modal" class="modal">
+          <span class="close">
+            <img class="modal-content" id="modalImage" />
+          </span>
+        </div>
       </div>
 
-      <section class="features__section">
+      <section class="features__section" id="features">
         <div class="features__title">
           <h2>FEATURES</h2>
           <p>Why you should consider Mario Forever – Community Edition</p>
@@ -91,7 +128,86 @@
         </div>
         <p class="additional-text">... And many more!</p>
       </section>
-      
+
+      <section class="contributors__section" id="contributors">
+        <div class="contributors__title">
+          <h2>CONTRIBUTORS</h2>
+        </div>
+        <div class="contributors__grid">
+          <a href="https://github.com/reflexguru">
+            <div class="contributor__box">
+              <div class="contributor__image">
+                <img src="img/avatars/reflexguru.png" alt="ReflexGURU" />
+              </div>
+              <h3>ReflexGURU</h3>
+              <p>Project lead, Coding, Level porting</p>
+            </div>
+          </a>
+          <a href="https://github.com/jue131">
+            <div class="contributor__box">
+              <div class="contributor__image">
+                <img src="img/avatars/jue13.png" alt="JUE13" />
+              </div>
+              <h3>JUE13</h3>
+              <p>Project lead, Coding, Level porting</p>
+            </div>
+          </a>
+
+          <a href="https://github.com/coreshinobi">
+            <div class="contributor__box">
+              <div class="contributor__image">
+                <img src="img/avatars/cs.png" />
+              </div>
+              <h3>CoreSHINOBI</h3>
+              <p>Level porting</p>
+            </div>
+          </a>
+
+          <div class="contributor__box">
+            <div class="contributor__image">
+              <img src="img/avatars/heavenice.png" />
+            </div>
+            <h3>Heavenice</h3>
+            <p>Graphics</p>
+          </div>
+          <a href="https://github.com/SerafimGWS">
+            <div class="contributor__box">
+              <div class="contributor__image placeholder">
+                <img src="img/avatars/serafimmchs.png" />
+              </div>
+              <h3>SerafimGWS</h3>
+              <p>Level porting, graphics, Level revamps</p>
+            </div>
+          </a>
+        </div>
+        <div class="helpers__section">
+          <h2>ADDITIONAL GRAPHICS BY</h2>
+          <div class="helpers__list">
+            <span>S.Koopa0</span>
+            <span>Anaswael</span>
+            <span>SuperMany</span>
+            <span>Bullex738</span>
+            <span>Jeansowaty</span>
+            <span>PlayerGuy</span>
+          </div>
+        </div>
+        <div class="helpers__section">
+          <h2>TESTING AND FEEDBACK</h2>
+          <div class="helpers__list">
+            <span>SoundWave961</span>
+            <span>Master48</span>
+            <span>ThirdStar248</span>
+            <span>MJXX</span>
+            <span>Bullex738</span>
+            <span>Niikes</span>
+            <span>Kavex</span>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer>
+      <div>2024 - Meteo Dream</div>
+      <div>Website design by nekohash9</div>
+    </footer>
   </body>
 </html>
